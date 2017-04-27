@@ -1,5 +1,7 @@
 require 'twilio-ruby'
-
+twili_pho_num = ''
+account_sid = ''
+auth_tok = ''
 client = Twilio::REST::Client.new account_sid, auth_tok
 client.account.messages.create(
 from: twili_pho_num,
